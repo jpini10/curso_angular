@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
 import { PagesRoutingModule } from './pages/pages.routing';
 import { authRoutingModule } from './auth/authRoutingModule';
+import { NgChartsModule } from 'ng2-charts';
  const routes:Routes=[
   
     {path:'',redirectTo:'/dashboard', pathMatch:'full'}, //ruta por defecto
@@ -15,7 +16,8 @@ import { authRoutingModule } from './auth/authRoutingModule';
 imports:[
     RouterModule.forRoot(routes),
     PagesRoutingModule,
-    authRoutingModule
+    authRoutingModule,
+    NgChartsModule,
 ],
 exports:[RouterModule]
 })

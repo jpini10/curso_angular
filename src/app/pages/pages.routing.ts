@@ -4,6 +4,7 @@ import { PagesComponent } from './pages/pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
+import { NgChartsModule } from 'ng2-charts';
     
     
     const routes: Routes = [
@@ -24,7 +25,9 @@ import { Grafica1Component } from './grafica1/grafica1.component';
     ];
     
     @NgModule({
-        imports: [RouterModule.forChild(routes)],
+        imports: [RouterModule.forChild(routes),
+            NgChartsModule
+        ],
         exports: [RouterModule]
     })
     export class PagesRoutingModule {}

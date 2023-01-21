@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import{FormsModule}  from '@angular/forms'
+import { NgChartsModule } from 'ng2-charts';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -35,7 +36,8 @@ import { ComponentsModule } from './components/components/components.module';
     BrowserModule,
     AppRoutingmodule,
     ComponentsModule,
-    ComponentsModule
+    ComponentsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
