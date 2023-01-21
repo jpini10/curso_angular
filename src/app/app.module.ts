@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import{FormsModule}  from '@angular/forms'
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -13,9 +13,11 @@ import { ProgressComponent } from './pages/progress/progress.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { AppRoutingmodule } from './app-routing.module';
 import { PagesComponent } from './pages/pages/pages.component';
+import { ComponentsModule } from './components/components/components.module';
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     LoginComponent,
     RegisterComponent,
@@ -29,8 +31,11 @@ import { PagesComponent } from './pages/pages/pages.component';
     PagesComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingmodule,
+    ComponentsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
