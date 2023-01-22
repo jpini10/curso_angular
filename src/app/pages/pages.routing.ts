@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { NgChartsModule } from 'ng2-charts';
+import { AccountSetingsComponent } from './account-setings/account-setings.component';
     
     
     const routes: Routes = [
@@ -15,6 +16,7 @@ import { NgChartsModule } from 'ng2-charts';
         {path:'', component: DashboardComponent},
         {path:'progress', component: ProgressComponent},
         {path:'grafica1', component:Grafica1Component},
+        {path:'setting', component:AccountSetingsComponent},
             ]   
         },
         //{ path: 'path/:routeParam', component: MyComponent },

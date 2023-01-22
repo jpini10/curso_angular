@@ -15,6 +15,8 @@ import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { AppRoutingmodule } from './app-routing.module';
 import { PagesComponent } from './pages/pages/pages.component';
 import { ComponentsModule } from './components/components/components.module';
+import { AccountSetingsComponent } from './pages/account-setings/account-setings.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { ComponentsModule } from './components/components/components.module';
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
+    AccountSetingsComponent,
   ],
   imports: [
     FormsModule,
@@ -37,7 +40,8 @@ import { ComponentsModule } from './components/components/components.module';
     AppRoutingmodule,
     ComponentsModule,
     ComponentsModule,
-    NgChartsModule
+    NgChartsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
